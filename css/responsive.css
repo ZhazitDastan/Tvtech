@@ -25,7 +25,7 @@
     }
   
     .slider_section {
-      padding-top: 45px;
+      padding-top: 0px;
     }
   
     .feature_section .feature_container .box {
@@ -141,5 +141,6 @@
   @media (max-width: 767px) {
     .navbar-brand {
       width: 80px; /* Уменьшаем ширину для мобильных устройств */
+      z-index: auto;
     }
   }

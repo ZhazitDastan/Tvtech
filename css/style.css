@@ -331,8 +331,6 @@ a:focus {
   height: 100%;
   background: url('../images/index1elem.jpg') center bottom/cover no-repeat;
   filter: blur(3px);
-  /* background-size: 80%; */
-  z-index: -1;
 }
 
 /* Добавляем стили для логотипа */
@@ -925,6 +923,7 @@ table {
   border: 1px solid #ddd;
   background-color: #fff;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  display: block;
 }
 
 th, td {
