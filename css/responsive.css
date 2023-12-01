@@ -1,133 +1,135 @@
-@media (max-width: 1300px) {}
+/* Общие стили для всех устройств */
 
-@media (max-width: 1120px) {}
-
-@media (max-width: 992px) {
+/* Стили для устройств с шириной экрана до 1300px */
+@media (max-width: 1300px) {
+    /* Ваши стили для этого диапазона ширины экрана здесь */
+  }
+  
+  /* Стили для устройств с шириной экрана до 1120px */
+  @media (max-width: 1120px) {
+    /* Ваши стили для этого диапазона ширины экрана здесь */
+  }
+  
+  /* Стили для устройств с шириной экрана до 992px */
+  @media (max-width: 992px) {
     .hero_area {
-        height: auto;
+      height: auto;
     }
-
+  
     .header_section .main_nav {
-        flex: 1;
+      flex: 1;
     }
-
+  
     #navbarSupportedContent {
-        margin-top: 15px;
+      margin-top: 15px;
     }
-
+  
     .slider_section {
-        padding-top: 45px;
+      padding-top: 45px;
     }
-
+  
     .feature_section .feature_container .box {
-        padding: 30px 15px;
+      padding: 30px 15px;
     }
-
+  
     .feature_section .feature_container .box .img-box {
-        width: 75px;
+      width: 75px;
     }
-
-
+  
     .feature_section {
-        transform: none;
-        padding: 90px 0;
+      transform: none;
+      padding: 90px 0;
     }
-
-
-}
-
-@media (max-width: 767px) {
-    .layout_padding {
-        padding-top: 90px;
-        padding-bottom: 90px;
-    }
-
-    .layout_padding-top {
-        padding-top: 90px;
-    }
-
+  }
+  
+  /* Стили для устройств с шириной экрана до 767px */
+  @media (max-width: 767px) {
+    .layout_padding,
+    .layout_padding-top,
     .layout_padding-bottom {
-        padding-bottom: 90px;
+      padding-top: 90px;
+      padding-bottom: 90px;
     }
-
+  
     .slider_section .detail-box {
-        padding-bottom: 45px;
+      padding-bottom: 45px;
     }
-
+  
     .feature_section .feature_container {
-        flex-direction: column;
+      flex-direction: column;
     }
-
+  
     .feature_section .feature_container .box {
-        padding: 30px 15px;
+      padding: 30px 15px;
+      margin-bottom: 15px;
     }
-
-    .feature_section .feature_container .box:not(:nth-last-child(1)) {
-        margin-bottom: 15px;
-    }
-
+  
     .about_section .detail-box {
-        margin-bottom: 45px;
+      margin-bottom: 45px;
     }
-
-
+  
     .professional_section .img-box {
-        display: none;
+      display: none;
     }
-
+  
     .contact_section form {
-        margin-bottom: 45px;
+      margin-bottom: 45px;
     }
-
+  
     .info_section .info_items::before {
-        width: 1px;
-        height: 90%;
-        top: 25px;
+      width: 1px;
+      height: 90%;
+      top: 25px;
     }
-
-}
-
-@media (max-width: 576px) {}
-
-@media (max-width: 480px) {}
-
-@media (max-width: 400px) {}
-
-@media (max-width: 360px) {}
-
-@media (min-width: 1200px) {
+  }
+  
+  /* Стили для устройств с шириной экрана до 576px */
+  @media (max-width: 576px) {
+    /* Ваши стили для этого диапазона ширины экрана здесь */
+  }
+  
+  /* Стили для устройств с шириной экрана до 480px */
+  @media (max-width: 480px) {
+    /* Ваши стили для этого диапазона ширины экрана здесь */
+  }
+  
+  /* Стили для устройств с шириной экрана до 400px */
+  @media (max-width: 400px) {
+    /* Ваши стили для этого диапазона ширины экрана здесь */
+  }
+  
+  /* Стили для устройств с шириной экрана до 360px */
+  @media (max-width: 360px) {
+    /* Ваши стили для этого диапазона ширины экрана здесь */
+  }
+  
+  /* Стили для устройств с минимальной шириной экрана 1200px */
+  @media (min-width: 1200px) {
     .container {
-        max-width: 1170px;
+      max-width: 1170px;
     }
-
-}
-
-
-@media (max-width: 468px) {
+  }
+  
+  /* Стили для устройств с максимальной шириной экрана 468px */
+  @media (max-width: 468px) {
     .table {
       display: block;
       width: 100%;
       overflow-x: auto;
     }
   
-    .table th, .table td {
+    .table th,
+    .table td {
       white-space: nowrap;
     }
   }
   
+  /* Стили для иконок WhatsApp и звонка при ширине экрана до 800px */
   @media screen and (max-width: 800px) {
-    .whatsapp-icon {
-      padding: 15px;
-      font-size: 20px;
-    }
-  }
-
-  @media screen and (max-width: 800px) {
+    .whatsapp-icon,
     .call-popup {
       padding: 15px;
       font-size: 20px;
     }
   }
-
- 
   
