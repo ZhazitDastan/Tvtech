@@ -30,55 +30,56 @@
 
 <body>
   <div class="hero_area">
-     <div class="header_bottom">
-        <div class="container-fluid">
-          <nav class="navbar navbar-expand-lg custom_nav-container ">
-            <a class="navbar-brand" href="index.html">
-              <span>
-                <a class="navbar-brand" href="index.html">
-                  <img src="images/Tech_backg.png" alt="Логотип">
-                </a>
-              </span>
+    <div class="header_bottom">
+      <div class="container-fluid">
+        <nav class="navbar navbar-expand-lg custom_nav-container ">
+          <!-- Логотип -->
+          <a class="navbar-brand" href="index.html">
+            <img class="logo-img" src="images/Tech_backg.png" alt="Логотип">
+          </a>
+  
+          <!-- Кнопка "бургер" для мобильных устройств -->
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class=""></span>
+          </button>
+  
+          <!-- Иконки звонка и WhatsApp -->
+          <div id="call-popup" class="call-popup">
+            <a href="tel:+1234567890">
+              <i class="fa fa-phone" aria-hidden="true"></i>
             </a>
-
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-              <span class=""> </span>
-            </button>
-
-            <!-- Добавил я  -->
-              <div id="call-popup" class="call-popup">
-                <a href="tel:+1234567890">
-                   <i class="fa fa-phone" aria-hidden="true"></i>
-                 </a>
-              </div>
-
-              <a href="https://wa.me/your-whatsapp-number" class="whatsapp-icon" target="_blank" rel="noopener noreferrer">
-                <i class="fab fa-whatsapp"></i>
-              </a>
-            
-              <!-- Скрипт для подключения Font Awesome (если еще не подключен) -->
-              <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/js/all.min.js" crossorigin="anonymous"></script>
-            <!-- конец -->
-
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-              <ul class="navbar-nav ">
-                <li class="nav-item active">
-                  <a class="nav-link" href="index.html">Главная страница <span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="about.html"> О Нас</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="service.html">Услуги</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#address_section">Наш адресс</a>
-                </li>
-              </ul>
-            </div>
-          </nav>
-        </div>
+          </div>
+  
+          <a href="https://wa.me/your-whatsapp-number" class="whatsapp-icon" target="_blank" rel="noopener noreferrer">
+            <i class="fab fa-whatsapp"></i>
+          </a>
+  
+          <!-- Скрипт для подключения Font Awesome (если еще не подключен) -->
+          <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/js/all.min.js" crossorigin="anonymous"></script>
+          <!-- Конец -->
+  
+          <!-- Список навигации -->
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ">
+              <li class="nav-item active">
+                <a class="nav-link" href="index.html">Главная страница <span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="about.html"> О Нас</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="service.html">Услуги</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#address_section">Наш адрес</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
       </div>
+    </div>
+  </div>
+  
     </header>
     <!-- end header section -->
     <!-- slider section -->
