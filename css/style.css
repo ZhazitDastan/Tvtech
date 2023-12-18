@@ -227,9 +227,9 @@ a:focus {
 /* ЛОГОТИП */
 /* Стили для логотипа */
 .logo-img {
-  max-height: 100px; /* Задайте желаемую высоту логотипа */
-  margin-right: 100px; /* Добавим небольшой отступ от иконок */
-}
+  max-height: 120px; /* Задайте желаемую высоту логотипа */
+  margin-right: 50px; /* Добавим небольшой отступ от иконок */
+ }
 
 
 .custom_nav-container .navbar-toggler span {
@@ -348,6 +348,12 @@ a:focus {
   height: 100%;
   background: url('../images/index1elem.jpg') center bottom/cover no-repeat;
   filter: blur(3px);
+  z-index: -1;
+}
+@media (max-width: 767px) {
+  .slider_section::before {
+    position: fixed; /* Переключаем на абсолютное позиционирование при уменьшении экрана */
+  }
 }
 
 
