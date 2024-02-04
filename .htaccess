@@ -1,0 +1,8 @@
+RewriteEngine On
+
+# Проверка, что запрос не является реальным файлом или директорией
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+
+# Перенаправление с расширения .html на URL без расширения
+RewriteRule ^([^\.]+)$ $1.html [NC,L]
