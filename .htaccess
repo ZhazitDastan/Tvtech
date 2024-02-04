@@ -1,8 +1,19 @@
-RewriteEngine On
+; RewriteEngine On
 
-# Проверка, что запрос не является реальным файлом или директорией
+; # Проверка, что запрос не является реальным файлом или директорией
+; RewriteCond %{REQUEST_FILENAME} !-f
+; RewriteCond %{REQUEST_FILENAME} !-d
+
+; # Перенаправление с расширения .html на URL без расширения
+; RewriteRule ^([^\.]+)$ $1.html [NC,L]
+
+; # Скрытие расширения .html в URL
+; RewriteCond %{REQUEST_FILENAME}.html -f
+; RewriteRule ^([^\.]+)$ $1.html [NC,L]
+
+RewriteEngine On
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)\.html$ /$1 [L,R=301]
 
-# Перенаправление с расширения .html на URL без расширения
-RewriteRule ^([^\.]+)$ $1.html [NC,L]
+
